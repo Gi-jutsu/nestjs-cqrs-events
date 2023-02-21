@@ -1,0 +1,24 @@
+{
+  "name": "nestjs-cqrs-events",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rimraf dist/ && nest build",
+    "start:development": "nest start --watch",
+    "start:production": "node dist/main.js"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^9.2.0",
+    "@types/node": "^18.14.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@nestjs/common": "^9.3.9",
+    "@nestjs/core": "^9.3.9",
+    "@nestjs/cqrs": "^9.0.3",
+    "@nestjs/platform-express": "^9.3.9",
+    "@nestjs/swagger": "^6.2.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "reflect-metadata": "^0.1.13"
+  }
+}
