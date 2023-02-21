@@ -6,7 +6,7 @@ import { AccountCreatedEvent } from '../account-created.event';
 @EventsHandler(AccountCreatedEvent)
 export class SendWelcomeEmailWhenAccountCreated implements IEventHandler {
   private readonly logger = new Logger(SendWelcomeEmailWhenAccountCreated.name);
-  
+
   handle(event: AccountCreatedEvent) {
     this.logger.debug(`Send WELCOME_EMAIL to ${event.email}`);
   }

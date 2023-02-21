@@ -19,7 +19,7 @@ export class CreateAccountCommandHandler implements ICommandHandler {
     
     this.eventBus.publish(
       new AccountCreatedEvent(account.id, account.email)
-    )
+    );
 
     return Promise.resolve();
   }
